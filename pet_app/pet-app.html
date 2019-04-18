@@ -1,0 +1,206 @@
+<!DPCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       <script>
+            function openNav() 
+            {
+                document.getElementById("side").style.width = "240px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() 
+            {
+                document.getElementById("side").style.width = "0";
+            }
+        </script>
+    <!-- Place your stylesheet here-->
+    <link href="pet-app.css" rel="stylesheet">
+        <title>
+            PET STORE
+        </title>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-md">
+            <div id="side" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <br><br><br>
+                <ul>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Food & Nutrition</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Find a Vet</a></li>
+                </ul>
+            </div>
+            <span onclick="openNav()" id="open" class="icon"><i class="fa fa-bars fa-lg"></i></span>
+            &ensp;&ensp;
+            <a href="#" class="navbar-brand"><img src="logo1.png" alt="Logo" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href=""><i class="fa fa-home fa-lg"><span class="sr-only">(current></span></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href=""><i class="fa fa-user fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="form-group has-search" id="search">
+            <input type="search" placeholder="Search..">
+            <button type="submit" id="search-btn"><i class="fa fa-search fa-lg"></i></button>
+            </div>
+            <br><br>
+            <div class="carousel slide" id="discounts" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#discounts" data-slide-to="0" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="1" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="2" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="3" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="4" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="5" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="6" class="active"></li>
+                    <li data-target="#discounts" data-slide-to="7" class="active"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="pet-discount.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount1.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount2.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount3.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount4.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount5.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount6.jpg"></div>
+                    <div class="carousel-item"><img src="pet-discount7.png"></div>
+                </div>
+                <a class="carousel-control-prev" href="#discounts" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                 <a class="carousel-control-next" href="#discounts" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+            </div>
+            <br>
+            <div id="products">
+                <h5>Most Viewed Items</h5>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="card">
+                        <img class="card-image-top" src="dog-food.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Canidae Natural Dog Food</h6>
+                            <p>N33,500</p>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                        <img class="card-image-top" src="dog-shampoo.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Vet's Best Dog Shampoo</h6>
+                            <p>N2,500</p>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                        <img class="card-image-top" src="cat-litter-box.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Scoop-free Ulta Self Cleaning Litter Box</h6>
+                            <p>N64,440</p>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                        <img class="card-image-top" src="dog-toy.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Petpany Rubber Dog Chew Toy</h6>
+                            <p>N5,032</p>
+                        </div>
+                    </div>
+                        </div>
+                    <div class="col-sm-2">
+                        <div class="card">
+                        <img class="card-image-top" src="dog-collar.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Adjustable Dog Collar With Bow Knot</h6>
+                            <p>N2,156</p>
+                        </div>
+                            </div>
+                    </div>
+                </div>
+                </div>
+            <br>
+            <div id="products">
+                <h5>Hot Sales</h5>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-image-top" src="dog-milk.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Esbilac Puppy Milk Power</h6>
+                            <p>N6,872</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image-top" src="cat-food.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Blue Buffalo Gourmet Cat Food</h6>
+                            <p>N8,636</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image-top" src="hamster-food.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Kaytee Forti-Diet Hamster Food</h6>
+                            <p>N1,616</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image-top" src="cat-dish.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">Fancy Cat Food Dish</h6>
+                            <p>N4,390</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image-top" src="dog-bed.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title">White Night Tent Dog Bed</h6>
+                            <p>N73,800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer class="page-footer">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <p>How can we help you?</p>
+                        </div>
+                        <div class="col-xl-4">
+                            <p>Contact Us</p>
+                        </div>
+                        <div class="col-xl-4">
+                            <h5>Languages</h5>
+                            <p>English<br>French<br>Polish<br>Igbo<br>Yoruba<br>Hausa</p>
+                        </div>
+                    </div>
+                    <div class="footer-copyright text-center py-3" id="copy">© 2019 Copyright
+                    </div>
+                </footer>
+    </body>
+</html>
