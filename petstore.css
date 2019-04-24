@@ -1,43 +1,20 @@
-#body
-{
-    background-color: white;
-}
 .navbar
 {
     background-color:indigo;
-    height: 8%;
+    height: 50px;
 }
+
 
 #logo
 {
     height: 130%;
-    margin-top: auto;
-    margin-bottom: auto;
 }
-
-@media only screen and (max-width:800px)
-{
-    #logo
-    {
-        top: 100%;
-        bottom: 100%;
-        position: absolute;
-        left: 15%;
-        height: 90%;
-        
-    }
-}
+/* Style the links inside the navigation bar */
 
 .navbar ul li
 {
     height: 50px;
 }
-
-.navbar button i
-{
-    color: white;
-}
-
 .navbar ul li a {
   float: left;
   display: block;
@@ -55,7 +32,7 @@
   background-color: gainsboro;
   color: black;
   display: block;
-  height: 100%;
+    height: 100%;
 }
 
 .nav-item .active 
@@ -69,18 +46,17 @@
   height: 100%; /* 100% Full-height */
   width: 0;
   position: fixed; /* Stay in place */
-  z-index: 100; /* Stay on top */
+  z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: indigo; /* Black*/
-  overflow: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav a
 {
-    float: left;
     left: 0;
     width: 100%;
     display: block;
@@ -91,9 +67,6 @@
 .sidenav ul
 {
     list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .sidenav .closebtn 
@@ -101,18 +74,15 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 50px;
-  float: left;
+  float: right;
 }
 
-#open
-{
-    float: left;
-    margin-top: auto;
-    margin-bottom: auto;
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
 
 #open
 {
@@ -120,7 +90,7 @@
     color: white;
 }
 
-.sidenav ul li:hover
+.sidebar ul li:hover
 {
     display: block;
     width: 100%;
@@ -168,20 +138,11 @@ input[type=search]
 
 #discounts
 {
-    height: 60%;
-    width: 100%;
+    height: 65%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
-
-@media only screen and (max-width:900px)
-    {
-        #discounts
-        {
-            height: 20%;
-            width: 100%;
-        }
-    }
 
 .carousel-item img
 {
@@ -189,52 +150,23 @@ input[type=search]
     width: 100%
 }
 
-.row .card
+.card
 {
-    height: 45%;
-    width: 19%;
+    height: 50%;
+    width: 15%;
     margin-left: 0;
 }
-
-@media only screen and (max-width:800px)
-    {
-        .row
-        {
-            font-size: 15px;
-            width: 100%;
-        }
-    }
-
 
 #products img
 {
     width: 100%;
-    height:60%;
+    height:65%;
 }
 
 #products p,h6
 {
     text-align: center;
-    width: auto;
 }
- @media only screen and (max-width:800px)
-    {
-        #products p,h6
-        {
-            font-size: 15px;
-            width: 100%;
-        }
-    }
-
- @media only screen and (max-width:600px)
-    {
-        #products p,h6
-        {
-            font-size: 10px;
-            width: 100%;
-        }
-    }
-
 
 .page-footer
 {
