@@ -32,6 +32,9 @@
 .navbar ul li
 {
     height: 50px;
+  
+    background-color: cadetblue;
+    width: 100%;
 }
 
 .navbar button i
@@ -45,45 +48,48 @@
     right: 0;
 }
 
-.navbar ul li a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 100%;
-  z-index: 100;
+.navbar ul li a 
+{
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      height: 100%;
+      z-index: 100;
+      width: 100%;
 }
 
 /* Change the color of links on hover */
 .navbar ul li a:hover 
 {
-  background-color: gainsboro;
-  color: black;
-  display: block;
-  height: 100%;
+      background-color: gainsboro;
+      color: black;
+      display: block;
+      height: 100%;
+      width: 100%;
 }
 
 .nav-item .active 
 {
-  background-color: mediumpurple;
-  color: white;
+      background-color: mediumpurple;
+      color: white;
 }
 
 .sidenav 
 {
-  height: 100%; /* 100% Full-height */
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 100; /* Stay on top */
-  top: 7.5%; /* Stay at the top */
-  left: 0;
-  background-color: cadetblue; /* Black*/
-  overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      height: 100%; /* 100% Full-height */
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 100; /* Stay on top */
+      top: 7.5%; /* Stay at the top */
+      left: 0;
+      background-color: cadetblue; /* Black*/
+      overflow: hidden; /* Disable horizontal scroll */
+      padding-top: 0px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .sidenav a

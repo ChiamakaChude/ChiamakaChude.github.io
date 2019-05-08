@@ -15,6 +15,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="logo1.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -49,42 +50,48 @@
     <!-- Place your stylesheet here-->
     <link href="pet-app.css" rel="stylesheet">
         <title>
-            Home Page
+            Royal Pets|Home Page
         </title>
     </head>
     
     <body id="bod">
-        <nav class="navbar navbar-expand-md navbar-fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top">
             <div id="side" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <br><br><br>
                 <ul>
-                <li><a href="#">Pets</a>
-                    <ul>
-                        <li><a href="#">Dogs</a></li>
-                        <li><a href="#">Cats</a></li>
-                        <li><a href="#">Hamsters</a></li>
-                        <li><a href="#">Birds</a></li>
-                        <li><a href="#">Fish</a></li>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pets</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Dogs</a></li>
+                        <li><a href="#" class="dropdown-item">Cats</a></li>
+                        <li><a href="#" class="dropdown-item">Hamsters</a></li>
+                        <li><a href="#" class="dropdown-item">Birds</a></li>
+                        <li><a href="#" class="dropdown-item">Fish</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Food & Nutrition</a>
-                    <ul>
-                        <li><a href="#">Dry food</a></li>
-                        <li><a href="#">Wet food</a></li>
-                        <li><a href="#">Fish food</a></li>
+                </div>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Food & Nutrition</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Dry food</a></li>
+                        <li><a href="#" class="dropdown-item">Wet food</a></li>
+                        <li><a href="#" class="dropdown-item">Fish food</a></li>
                         <li><a href="#">Supplements</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Accessories</a>
-                    <ul>
-                        <li><a href="#">Collars & leashes</a></li>
-                        <li><a href="#">Bowls & feeers</a></li>
-                        <li><a href="#">Grooming</a></li>
-                        <li><a href="#">Toys</a></li>
-                        <li><a href="#">Cages & crates</a></li>
+               </div>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Collars & leashes</a></li>
+                        <li><a href="#" class="dropdown-item">Bowls & feeers</a></li>
+                        <li><a href="#" class="dropdown-item">Grooming</a></li>
+                        <li><a href="#" class="dropdown-item">Toys</a></li>
+                        <li><a href="#" class="dropdown-item">Cages & crates</a></li>
                     </ul>
                 </li>
+                </div>
                 <li><a href="#">Find a Vet</a></li>
                 </ul>
             </div>
