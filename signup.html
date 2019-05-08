@@ -1,0 +1,112 @@
+<!DPCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       <script>
+            function openNav() 
+            {
+                document.getElementById("side").style.width = "240px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() 
+            {
+                document.getElementById("side").style.width = "0";
+            }
+        </script>
+        <script>
+                    function night()
+                    {
+                        var color=document.getElementById('bod').style.color;
+                        var backgroundColor=document.getElementById('bod').style.backgroundColor="black";
+                        /*
+                        if (backgroundColor=="white")
+                            {
+                                document.getElementById('bod').style.backgroundColor="black";
+                            }
+                        else if (backgroundColor=="black")
+                            {
+                                document.getElementById('bod').style.backgroundColor="black";
+                            }*/
+                    }
+                </script>
+    <!-- Place your stylesheet here-->
+    <link href="pet-app.css" rel="stylesheet">
+        <title>Sign Up</title>
+    </head>
+    
+    <body id="bod" style="background-image: url(pet-group-photo.jpg); background-repeat: no-repeat; background-size: cover;">
+        <nav class="navbar navbar-expand-md">
+            <div id="side" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <br><br><br>
+                <ul>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Food & Nutrition</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Find a Vet</a></li>
+                </ul>
+            </div>
+            <span onclick="openNav()" id="open" class="icon"><i class="fa fa-bars fa-lg"></i></span>
+            &ensp;&ensp;
+            <a href="#" class="navbar-brand"><img src="logo1.png" alt="Logo" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
+                <li class="nav-item" id="mode"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="night mode" onclick="night()" style="color: white;"><i class="fa fa-moon-o fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            </ul>
+            </div>
+        </nav>
+        <br>
+        <form>
+        <div id="form">
+            <img src="logo1.png" id="signlogo"><br>
+            <h3><b>Sign UP</b></h3>
+            <div class="form-inline"> 
+                <br><input type="text" name="firstname" class="form-control" placeholder="First Name">&ensp;
+                <br><input type="text" name="lastname" class="form-control" placeholder="Last Name">&ensp;
+            </div>
+           
+             
+           
+            <div class="form-group">
+                <br>
+                <input type="email" name="email" class="form-control" placeholder="E-mail">&ensp;</div>
+            <div class="form-group">
+                <input type="number" name="number" class="form-control" placeholder="Phone Number">&ensp;
+            </div>
+            
+            
+            
+            <div  class="form-inline">
+                <input type="password" name="firstname" class="form-control" placeholder="Password">&ensp;
+                <input type="password" name="address" class="form-control" placeholder="Re-write Password">&ensp;
+            </div>
+            <br><br>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <br><br>
+            <p>Already have an account? <a href="signin.html">Log in</a></p>
+        </div>
+        </form>
+    </body>
+</html>

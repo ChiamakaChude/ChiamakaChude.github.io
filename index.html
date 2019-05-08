@@ -49,7 +49,7 @@
     <!-- Place your stylesheet here-->
     <link href="pet-app.css" rel="stylesheet">
         <title>
-            PET STORE
+            Home Page
         </title>
     </head>
     
@@ -71,11 +71,13 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button>
             <div class="collapse navbar-collapse" id="nav-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href=""><i class="fa fa-home fa-lg"><span class="sr-only">(current></span></i></a></li>
+                <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
-                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href=""><i class="fa fa-user fa-lg"></i></a></li>
-                <li class="nav-item" id="mode"><button class="nav-link" type="button" data-toggle="tootlip" data-placement="bottom" title="night mode" onclick="night()" style="background-color: indigo;"><i class="fa fa-moon-o fa-lg"></i></button></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
+                <li class="nav-item" id="mode"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="night mode" onclick="night()" style="color: white;"><i class="fa fa-moon-o fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="">About</a></li>
+                <li class="nav-item" id="sign"><a href="signin.html">Sign in</a></li>
+                <li class="nav-item" id="sign"><a href="signup.html">Sign up</a></li>
             </ul>
             </div>
         </nav>
@@ -105,7 +107,7 @@
                         <div class="card">
                         <img class="card-image-top" src="dog-food.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Canidae Natural Dog Food</h6>
+                            <h6 class="card-title" id="p-name">Canidae Natural Dog Food</h6>
                             <p>N33,500</p>
                         </div>
                     </div>
@@ -113,7 +115,7 @@
                         <div class="card">
                         <img class="card-image-top" src="dog-shampoo.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Vet's Best Dog Shampoo</h6>
+                            <h6 class="card-title" id="p-name">Vet's Best Dog Shampoo</h6>
                             <p>N2,500</p>
                         </div>
                     </div>
@@ -121,7 +123,7 @@
                         <div class="card">
                         <img class="card-image-top" src="cat-litter-box.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Scoop-free Ulta Self Cleaning Litter Box</h6>
+                            <h6 class="card-title" id="p-name">Scoop-free Ulta Self Cleaning Litter Box</h6>
                             <p>N64,440</p>
                         </div>
                     </div>
@@ -129,15 +131,15 @@
                         <div class="card">
                         <img class="card-image-top" src="dog-toy.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Petpany Rubber Dog Chew Toy</h6>
+                            <h6 class="card-title" id="p-name">Petpany Rubber Dog Chew Toy</h6>
                             <p>N5,032</p>
                         </div>
                     </div>
                     &ensp;
-                        <div class="card">
+                        <div class="card" id="card-last">
                         <img class="card-image-top" src="dog-collar.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Adjustable Dog Collar With Bow Knot</h6>
+                            <h6 class="card-title" id="p-name">Adjustable Dog Collar With Bow Knot</h6>
                             <p>N2,156</p>
                         </div>
                             </div>
@@ -150,15 +152,15 @@
                     <div class="card">
                         <img class="card-image-top" src="dog-milk.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Esbilac Puppy Milk Power</h6>
+                            <h6 class="card-title" id="p-name">Esbilac Puppy Milk Power</h6>
                             <p>N6,872</p>
                         </div>
                     </div>
                     &ensp;
-                    <div class="card">
+                    <div class="card" >
                         <img class="card-image-top" src="cat-food.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Blue Buffalo Gourmet Cat Food</h6>
+                            <h6 class="card-title" id="p-name">Blue Buffalo Gourmet Cat Food</h6>
                             <p>N8,636</p>
                         </div>
                     </div>
@@ -166,7 +168,7 @@
                     <div class="card">
                         <img class="card-image-top" src="hamster-food.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Kaytee Forti-Diet Hamster Food</h6>
+                            <h6 class="card-title" id="p-name">Kaytee Forti-Diet Hamster Food</h6>
                             <p>N1,616</p>
                         </div>
                     </div>
@@ -174,20 +176,31 @@
                     <div class="card">
                         <img class="card-image-top" src="cat-dish.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">Fancy Cat Food Dish</h6>
+                            <h6 class="card-title" id="p-name">Fancy Cat Food Dish</h6>
                             <p>N4,390</p>
                         </div>
                     </div>
                     &ensp;
-                    <div class="card">
+                    <div class="card" id="card-last">
                         <img class="card-image-top" src="dog-bed.jpg" alt="Card Image">
                         <div class="card-body">
-                            <h6 class="card-title">White Night Tent Dog Bed</h6>
+                            <h6 class="card-title" id="p-name">White Night Tent Dog Bed</h6>
                             <p>N73,800</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                var hght=screen.height;
+                var wdth=screen.width;
+                var i;
+                var len=document.getElementById("p-name");
+                len.length;
+                if (wdth<=1118 && hght<=740)
+                    {
+                        if
+                    }
+            </script>
         </div>
         <br>
         <footer class="page-footer">
