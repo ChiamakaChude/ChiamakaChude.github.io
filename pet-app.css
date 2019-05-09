@@ -271,29 +271,29 @@ input[type=search]
             width: 100%;
             height:55%;
         } 
-        #shower,#save
-        {
-            width: 45%;
-            height: 10px;
-        }
-        #shower h3
+       
+        #shower h3, #save h3
         {
             text-align: center;
             color: dodgerblue;
-            font-size: 14px;
+            font-size: 11px;
         }
         #shower img
         {
             height: 55%;
             width: 100%;
         }
-
+        #shower
+        {
+            width: 45%;
+            height: 200px;
+        }
     }
 
 #shower,#save
 {
     width: 45%;
-    height: 550px;
+    height: 200px;
 }
 
 #shower img
@@ -304,7 +304,7 @@ input[type=search]
 
 #save img
 {
-    height: 80%;
+    height: 70%;
     width: 100%;
 }
 
