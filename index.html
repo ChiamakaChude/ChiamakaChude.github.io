@@ -12,7 +12,6 @@
     
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="icon" href="logo1.png">
@@ -39,7 +38,7 @@
     </head>
     
     <body id="bod">
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top" id="nav">
             <div id="side" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <br><br><br>
@@ -83,8 +82,9 @@
             &ensp;&ensp;
             <a href="#" class="navbar-brand"><img src="logo1.png" alt="Logo" id="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button>
+            
             <div class="collapse navbar-collapse" id="nav-collapse">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto w-100">
                 <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
@@ -93,8 +93,10 @@
                 <li class="nav-item" id="sign"><a href="signup.html">Sign up</a></li>
             </ul>
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-md" style="background-color: darkblue; height: 5%">
+        
+        <!--<ol class="navbar-nav navbar-expand-md w-100" style="background-color: darkblue; height: 5%;">
+                <li class="nav-item" id="sign"><a href="">Delivery</a></li>
+        </ol>-->
         </nav>
         <br><br>
             <div class="carousel slide" id="discounts" data-ride="carousel">
@@ -111,7 +113,7 @@
                 <a class="carousel-control-prev" href="#discounts" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
                  <a class="carousel-control-next" href="#discounts" data-slide="next"><span class="carousel-control-next-icon"></span></a>
             </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="form-group has-search" id="search">
             <input type="search" placeholder="Search..">
             <button type="submit" id="search-btn"><i class="fa fa-search fa-lg"></i></button>
@@ -218,23 +220,23 @@
                     }
             </script>
         <br>
+        </div>
         <div class="row">
+            <div class="card" id="save">
+            <img class="card-image" src="pet-ad.jpg">
+            </div>
         <div class="card" id="shower">
             <img class="card-image" src="dog-shower.jpg">
             <div class="card-body">
             <h3>Get <b style="color: red;">50%</b> Discounts on Grooming Materials</h3>
             </div>
         </div>
-        <div class="card" id="save">
-            <img class="card-image" src="food-ad.jpg">
-            <div class="card-body">
-                <h3 style="color: red;"></h3>
-            </div>
-        </div>
         </div>
         <br>
+        <div class="container-fluid">
+        <br>
          <div id="products">
-             <h5>Cages and Approved Flight Carriers| Over 100 Proucts<a>  See all<i class="fa fa-angle-right fa-lg" style="float: right;"></i></a></h5>
+             <h5 id="ad">Cages and Approved Flight Carriers| Over 100 Proucts<a>  See all</a></h5>
                 <div class="row">
                     <div class="card">
                         <img class="card-image-top" src="hamster-cage.jpg" alt="Card Image">
@@ -277,8 +279,9 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div> 
         <br>
+             <img src="pet-insurance.jpg" id="insurance">
         <footer class="page-footer">
                     <div class="row">
                         <div class="col-xl-4">
