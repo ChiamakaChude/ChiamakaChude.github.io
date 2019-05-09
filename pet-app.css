@@ -1,6 +1,6 @@
-#body
+body
 {
-    background-color: white;
+    background-color: gainsboro;
 }
 
 .navbar
@@ -271,10 +271,10 @@ input[type=search]
             width: 100%;
             height:55%;
         } 
-        #shower
+        #shower,#save
         {
             width: 45%;
-            height: 150px;
+            height: 10px;
         }
         #shower h3
         {
@@ -290,7 +290,7 @@ input[type=search]
 
     }
 
-#shower
+#shower,#save
 {
     width: 45%;
     height: 550px;
@@ -299,6 +299,12 @@ input[type=search]
 #shower img
 {
     height: 70%;
+    width: 100%;
+}
+
+#save img
+{
+    height: 80%;
     width: 100%;
 }
 
