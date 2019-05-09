@@ -31,22 +31,6 @@
                 document.getElementById("side").style.width = "0";
             }
         </script>
-        <script>
-                    function night()
-                    {
-                        var color=document.getElementById('bod').style.color;
-                        var backgroundColor=document.getElementById('bod').style.backgroundColor="black";
-                        /*
-                        if (backgroundColor=="white")
-                            {
-                                document.getElementById('bod').style.backgroundColor="black";
-                            }
-                        else if (backgroundColor=="black")
-                            {
-                                document.getElementById('bod').style.backgroundColor="black";
-                            }*/
-                    }
-                </script>
     <!-- Place your stylesheet here-->
     <link href="pet-app.css" rel="stylesheet">
         <title>
@@ -104,7 +88,6 @@
                 <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
-                <li class="nav-item" id="mode"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="night mode" onclick="night()" style="color: white;"><i class="fa fa-moon-o fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="">About</a></li>
             </ul>
             </div>
@@ -122,7 +105,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Sign In</button>
             <br>
-            <p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
         </div>
         </form>
     </body>

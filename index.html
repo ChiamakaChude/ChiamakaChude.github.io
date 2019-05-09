@@ -31,22 +31,6 @@
                 document.getElementById("side").style.width = "0";
             }
         </script>
-        <script>
-                    function night()
-                    {
-                        var color=document.getElementById('bod').style.color;
-                        var backgroundColor=document.getElementById('bod').style.backgroundColor="black";
-                        /*
-                        if (backgroundColor=="white")
-                            {
-                                document.getElementById('bod').style.backgroundColor="black";
-                            }
-                        else if (backgroundColor=="black")
-                            {
-                                document.getElementById('bod').style.backgroundColor="black";
-                            }*/
-                    }
-                </script>
     <!-- Place your stylesheet here-->
     <link href="pet-app.css" rel="stylesheet">
         <title>
@@ -104,12 +88,13 @@
                 <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
-                <li class="nav-item" id="mode"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="night mode" onclick="night()" style="color: white;"><i class="fa fa-moon-o fa-lg"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="">About</a></li>
                 <li class="nav-item" id="sign"><a href="signin.html">Sign in</a></li>
                 <li class="nav-item" id="sign"><a href="signup.html">Sign up</a></li>
             </ul>
             </div>
+        </nav>
+        <nav class="navbar navbar-expand-md" style="background-color: darkblue; height: 5%">
         </nav>
         <br><br>
             <div class="carousel slide" id="discounts" data-ride="carousel">
@@ -126,14 +111,14 @@
                 <a class="carousel-control-prev" href="#discounts" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
                  <a class="carousel-control-next" href="#discounts" data-slide="next"><span class="carousel-control-next-icon"></span></a>
             </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="form-group has-search" id="search">
             <input type="search" placeholder="Search..">
             <button type="submit" id="search-btn"><i class="fa fa-search fa-lg"></i></button>
             </div>
             <br><br>
             <div id="products">
-                <h5>Most Viewed Items</h5>
+                <h5>New Arrivals</h5>
                 <div class="row">
                         <div class="card">
                         <img class="card-image-top" src="dog-food.jpg" alt="Card Image">
@@ -142,7 +127,7 @@
                             <p>N33,500</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                         <div class="card">
                         <img class="card-image-top" src="dog-shampoo.jpg" alt="Card Image">
                         <div class="card-body">
@@ -150,7 +135,7 @@
                             <p>N2,500</p>
                         </div>
                     </div>
-                    &ensp;
+                   
                         <div class="card">
                         <img class="card-image-top" src="cat-litter-box.jpg" alt="Card Image">
                         <div class="card-body">
@@ -158,7 +143,7 @@
                             <p>N64,440</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                         <div class="card">
                         <img class="card-image-top" src="dog-toy.jpg" alt="Card Image">
                         <div class="card-body">
@@ -166,7 +151,7 @@
                             <p>N5,032</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                         <div class="card" id="card-last">
                         <img class="card-image-top" src="dog-collar.jpg" alt="Card Image">
                         <div class="card-body">
@@ -178,7 +163,7 @@
                 </div>
             <br>
             <div id="products">
-                <h5>Hot Sales</h5>
+                <h5>Latest Sales</h5>
                 <div class="row">
                     <div class="card">
                         <img class="card-image-top" src="dog-milk.jpg" alt="Card Image">
@@ -187,7 +172,7 @@
                             <p>N6,872</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                     <div class="card" >
                         <img class="card-image-top" src="cat-food.jpg" alt="Card Image">
                         <div class="card-body">
@@ -195,7 +180,7 @@
                             <p>N8,636</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                     <div class="card">
                         <img class="card-image-top" src="hamster-food.jpg" alt="Card Image">
                         <div class="card-body">
@@ -203,7 +188,7 @@
                             <p>N1,616</p>
                         </div>
                     </div>
-                    &ensp;
+                   
                     <div class="card">
                         <img class="card-image-top" src="cat-dish.jpg" alt="Card Image">
                         <div class="card-body">
@@ -211,7 +196,7 @@
                             <p>N4,390</p>
                         </div>
                     </div>
-                    &ensp;
+                    
                     <div class="card" id="card-last">
                         <img class="card-image-top" src="dog-bed.jpg" alt="Card Image">
                         <div class="card-body">
@@ -232,22 +217,67 @@
                         if
                     }
             </script>
-        </div>
         <br>
-        <div class="row" id="row">
+        <div class="row">
         <div class="card" id="shower">
             <img class="card-image" src="dog-shower.jpg">
             <div class="card-body">
             <h3>Get <b style="color: red;">50%</b> Discounts on Grooming Materials</h3>
             </div>
-        </div>&emsp;
+        </div>
         <div class="card" id="save">
-            <img class="card-image" src="healthy-pet.jpg">
+            <img class="card-image" src="food-ad.jpg">
             <div class="card-body">
-                <h3 style="color: red;">Save a pet today. Visit <a href="">chiamaka.saveapet.com</a></h3>
+                <h3 style="color: red;"></h3>
             </div>
         </div>
         </div>
+        <br>
+         <div id="products">
+             <h5>Cages and Approved Flight Carriers| Over 100 Proucts<a>  See all<i class="fa fa-angle-right fa-lg" style="float: right;"></i></a></h5>
+                <div class="row">
+                    <div class="card">
+                        <img class="card-image-top" src="hamster-cage.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title" id="p-name">Savic Small Hamster Cage</h6>
+                            <p>N15,430</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" >
+                        <img class="card-image-top" src="pet-carrier1.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title" id="p-name">Large Flight Approved Pet Cage</h6>
+                            <p>N21,510</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img class="card-image-top" src="cat-cage.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title" id="p-name">Wire Pet Cages Cat Crate Playpen</h6>
+                            <p>N35,700</p>
+                        </div>
+                    </div>
+                   
+                    <div class="card">
+                        <img class="card-image-top" src="hamster-cage1.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title" id="p-name">Pet Hamster Cage Luxury Warehouse</h6>
+                            <p>N32,140</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" id="card-last">
+                        <img class="card-image-top" src="dog-carrier.jpg" alt="Card Image">
+                        <div class="card-body">
+                            <h6 class="card-title" id="p-name">Dog Crates Cage Kernel Carrier</h6>
+                            <p>N73,800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         <br>
         <footer class="page-footer">
                     <div class="row">

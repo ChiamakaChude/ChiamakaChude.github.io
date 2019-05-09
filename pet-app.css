@@ -1,6 +1,6 @@
 body
 {
-    background-color: gainsboro;
+    background-color:lightgrey;
 }
 
 .navbar
@@ -31,7 +31,7 @@ body
 
 .navbar ul li
 {
-    height: 50px;
+    height: 45px;
     background-color: cadetblue;
     width: 100%;
 }
@@ -78,6 +78,7 @@ body
 
 .sidenav 
 {
+      border: 1px solid gray;
       height: 100%; /* 100% Full-height */
       width: 0;
       position: fixed; /* Stay in place */
@@ -180,7 +181,7 @@ input[type=search]
 
 #discounts
 {
-    height: 60%;
+    height: 45%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -203,9 +204,16 @@ input[type=search]
 
 .row .card
 {
-    height: 300px;
-    width: 19%;
-    margin-left: 0;
+    border: none;
+    height: 270px;
+    width: 18%;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+.card
+{
+    box-shadow: 1px 1px 2px 3px solid black;
 }
 
 @media only screen and (max-width:800px)
@@ -217,7 +225,6 @@ input[type=search]
         }
     }
 
-
 #products img
 {
     width: 100%;
@@ -226,6 +233,7 @@ input[type=search]
 
 #products p,h6
 {
+    font-size: 14px;
     text-align: center;
     width: auto;
 }
@@ -233,7 +241,7 @@ input[type=search]
     {
         #products p,h6
         {
-            font-size: 15px;
+            font-size: 12px;
             width: 100%;
         }
         .row .card
@@ -304,7 +312,7 @@ input[type=search]
 
 #save img
 {
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 
