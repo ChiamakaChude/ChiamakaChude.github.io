@@ -30,7 +30,106 @@
             {
                 document.getElementById("side").style.width = "0";
             }
-        </script>s
+        </script>
+    <!-- Place your stylesheet here-->
+    <link href="pet-app.css" rel="stylesheet">
+        <title>
+            Royal Pet Stores|Profile
+        </title>
+    </head>
+    
+    <body id="bod">
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div id="side" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <br><br><br>
+                <ul>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pets</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Dogs</a></li>
+                        <li><a href="#" class="dropdown-item">Cats</a></li>
+                        <li><a href="#" class="dropdown-item">Hamsters</a></li>
+                        <li><a href="#" class="dropdown-item">Birds</a></li>
+                        <li><a href="#" class="dropdown-item">Fish</a></li>
+                    </ul>
+                </li>
+                </div>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Food & Nutrition</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Dry food</a></li>
+                        <li><a href="#" class="dropdown-item">Wet food</a></li>
+                        <li><a href="#" class="dropdown-item">Fish food</a></li>
+                        <li><a href="#">Supplements</a></li>
+                    </ul>
+                </li>
+               </div>
+                <div class="dropdown">
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Collars & leashes</a></li>
+                        <li><a href="#" class="dropdown-item">Bowls & feeers</a></li>
+                        <li><a href="#" class="dropdown-item">Grooming</a></li>
+                        <li><a href="#" class="dropdown-item">Toys</a></li>
+                        <li><a href="#" class="dropdown-item">Cages & crates</a></li>
+                    </ul>
+                </li>
+                </div>
+                <li><a href="#">Find a Vet</a></li>
+                </ul>
+            </div>
+            <span onclick="openNav()" id="open" class="icon"><i class="fa fa-bars fa-lg"></i></span>
+            &ensp;&ensp;
+            <a href="#" class="navbar-brand"><img src="logo1.png" alt="Logo" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars fa-lg"></i></button>
+            <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Home" href="index.html"><i class="fa fa-home fa-lg"><span class="sr-only">current</span></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Likes" href=""><i class="fa fa-heart fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tootlip" data-placement="bottom" title="Profile" href="profile.html"><i class="fa fa-user fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="">About</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="form-group has-search" id="search">
+            <input type="search" placeholder="Search..">
+            <button type="submit" id="search-btn"><i class="fa fa-search fa-lg"></i></button>
+            </div>
+        
+        <!DPCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+        
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="logo1.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       <script>
+            function openNav() 
+            {
+                document.getElementById("side").style.width = "240px";
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() 
+            {
+                document.getElementById("side").style.width = "0";
+            }
+        </script>
     <!-- Place your stylesheet here-->
     <link href="pet-app.css" rel="stylesheet">
         <title>
@@ -93,9 +192,24 @@
             </div>
         </nav>
         <div class="form-group has-search" id="search">
-            <input type="search" placeholder="Search..">
+            <br><br><br>
+            <input type="search" placeholder="Enter your location..">
             <button type="submit" id="search-btn"><i class="fa fa-search fa-lg"></i></button>
             </div>
+        <br><br>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+        function myMap() 
+            {
+                var mapProp= {center:new google.maps.LatLng(51.508742,-0.120850),
+                  zoom:5};
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
             <br><br>
         <footer class="page-footer">
                     <div class="row">
@@ -113,5 +227,7 @@
                     <div class="footer-copyright text-center py-3" id="copy">© 2019 Copyright
                     </div>
                 </footer>
+    </body>
+            <br><br>
     </body>
 </html>

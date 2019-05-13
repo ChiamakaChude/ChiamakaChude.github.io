@@ -56,6 +56,7 @@ body
       font-size: 17px;
       height: 100%;
       z-index: 100;
+      width: 100%;
 }
 
 /* Change the color of links on hover */
@@ -65,7 +66,7 @@ body
       color: black;
       display: block;
       height: 100%;
-   
+      width: 100%;
 }
 
 .nav-item .active 
@@ -236,8 +237,9 @@ input[type=search]
 #products p,h6
 {
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     width: auto;
+    font-weight: bold;
 }
  @media only screen and (max-width:800px)
     {
@@ -249,8 +251,9 @@ input[type=search]
         .row .card
         {
             height: 150px;
-            width: 19%;
-            margin-left: 0;
+            width: 20%;
+            margin-left: auto;
+            margin-right: auto;
         }
         #products img
         {
@@ -291,7 +294,7 @@ input[type=search]
 
 #shower
 {
-    width: 38%;
+    width: 40%;
     height: 350px;
 }
 
@@ -323,12 +326,12 @@ input[type=search]
         }
         #shower
         {
-            width: 43%;
+            width: 44%;
             height: 190px;
         }
         #save
         {
-            width: 54%;
+            width: 56%;
             height: 190px;
         }
         #ad
@@ -336,6 +339,13 @@ input[type=search]
             font-size: 12px;
         }
 }
+
+#insurance
+    {
+        width: 100%;
+        height: 45%;
+    }
+
 @media only screen and (max-width:1024px)
 {
     #insurance
@@ -364,6 +374,63 @@ input[type=search]
     text-align: center;
 }
 
+#contact button
+{
+    background-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    padding: 12px;
+}
+
+#twitter
+{
+    color: black;
+}
+
+#twitter:hover
+{
+    cursor: pointer;
+}
+
+#pinterest  
+{
+    color: black;
+}
+#pinterest:hover
+{
+    cursor: pointer;
+}
+  
+#facebook
+{
+    color: black;
+}
+
+#facebook:hover
+{
+    cursor: pointer;
+}
+
+#googleplus 
+{
+    color: black;
+}
+#googleplus:hover
+{
+    cursor: pointer;
+}
+
+#instagram
+{
+    color: black;
+}
+
+#instagram:hover
+{
+    cursor: pointer;
+}
+
 #copy
 {
     background-color:steelblue;
@@ -371,7 +438,12 @@ input[type=search]
 }
 
 
-
+#contact
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 /*Profile page*/
 
 
